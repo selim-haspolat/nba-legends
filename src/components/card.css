@@ -1,0 +1,31 @@
+#card-div {
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+#card-div img,
+#card-div div {
+  backface-visibility: hidden;
+}
+
+#card-div img {
+  transform: perspective(500px);
+}
+#card-div div {
+  cursor: pointer;
+  transform: perspective(1000px) rotateY(180deg);
+  height: 288px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 6px;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+/* #card-div:hover{
+    transform: perspective(1000px) rotateY(180deg);
+} */
+
+.flipped {
+    transform: perspective(1000px) rotateY(180deg);
+}
